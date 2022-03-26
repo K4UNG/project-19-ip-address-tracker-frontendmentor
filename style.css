@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-neutral-800: hsl(0, 0%, 17%);
+    --clr-neutral-600: hsl(0, 0%, 59%);
+
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    --top-height: 320px;
+    --border: 1rem;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: var(--clr-neutral-800);
+}
+
+main {
+    min-height: 100vh;
+    position: relative;
+    padding: 1.5rem;
+}
+
+.bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.top {
+    height: var(--top-height);
+    background-image: url(images/pattern-bg.png);
+    background-position: center;
+}
+
+.bot {
+    height: calc(100vh - var(--top-height));
+    background: gray;
+}
+
+main h1 {
+    color: white;
+    font-weight: var(--fw-500);
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    height: 55px;
+    border-radius: var(--border);
+    display: grid;
+    grid-template-columns: auto 80px;
+    overflow: hidden;
+    margin: 1.5em 0;
+    background-color: white;
+}
+
+form input {
+    width: 100%;
+    border-top-left-radius: var(--border);
+    border-bottom-left-radius: var(--border);
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+form button {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    border: none;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+form button:hover {
+    opacity: .8;
+}
+
+.info {
+    /* display: none; */
+    text-align: center;
+    background: white;
+    border-radius: var(--border);
+    padding: 1rem;
+}
+
+.info .container {
+    margin: .5em 0;
+}
+
+.info h2 {
+    font-weight: var(--fw-700);
+    font-size: .7125rem;
+    color: var(--clr-neutral-600);
+    text-transform: uppercase;
+}
+
+.info p {
+    font-weight: var(--fw-600);
+    font-size: 1.5rem;
+    line-height: 1.7;
+}

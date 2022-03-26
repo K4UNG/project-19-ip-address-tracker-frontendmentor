@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+</head>
+<body>
+
+  <main>
+    <h1>IP Address Tracker</h1>
+
+    <div class="bg">
+      <div class="top"></div>
+      <div class="bot" id="map"></div>
+    </div>
+
+    <form action="">
+      <input type="text">
+      <button aria-label="submit button" type="submit"><img src="images/icon-arrow.svg" alt=""></button>
+    </form>
+
+    <div class="info">
+      <div class="container">
+        <h2>ip address</h2>
+        <p id="ip"></p>
+      </div>
+      <div class="container">
+        <h2>location</h2>
+        <p id="location"></p>
+      </div>
+      <div class="container">
+        <h2>timezone</h2>
+        <p id="time"></p>
+      </div>
+      <div class="container">
+        <h2>isp</h2>
+        <p id="isp"></p>
+      </div>
+    </div>
+
+  </main>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script type="application/javascript" src="script.js"></script>
+  <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+</body>
+</html>
