@@ -100,11 +100,6 @@ form button:hover {
     opacity: .8
 }
 
-form>*:focus {
-    outline: 2px solid black;
-    outline-offset: 2px;
-}
-
 .info {
     max-width: 1200px;
     text-align: center;
